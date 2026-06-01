@@ -6,9 +6,13 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.2",
     "typescript": "^6.0.3",
-    "vite": "^8.0.15"
+    "vite": "^8.0.15",
+    "wrangler": "^4.95.0"
   },
   "scripts": {
+    "build": "vite build",
+    "deploy": "vite build && wrangler deploy",
+    "preview": "vite build && wrangler dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
