@@ -1,0 +1,24 @@
+.page { flex: 1; overflow-y: auto; padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; max-width: 560px; }
+.title { font-size: 18px; font-weight: 600; color: var(--fg); }
+.section { background: var(--bg-soft); border: 1px solid var(--bg1); border-radius: 8px; padding: 16px 20px; display: flex; flex-direction: column; gap: 12px; }
+.sectionTitle { font-size: 11px; font-weight: 600; color: var(--fg4); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.row { display: flex; align-items: center; gap: 12px; }
+.col { display: flex; flex-direction: column; gap: 8px; }
+.label { font-size: 12px; color: var(--fg4); width: 60px; flex-shrink: 0; }
+.staticVal { font-size: 13px; color: var(--fg3); }
+.input { background: var(--bg1); border: 1px solid var(--bg2); color: var(--fg); padding: 6px 10px; border-radius: 4px; font-size: 13px; flex: 1; }
+.input:focus { outline: none; border-color: var(--blue-b); }
+.saveBtn { background: var(--green); color: var(--fg); border: none; border-radius: 4px; padding: 5px 14px; font-size: 12px; cursor: pointer; flex-shrink: 0; }
+.saveBtn:hover { background: var(--green-b); }
+.saveBtn:disabled { opacity: 0.6; cursor: default; }
+.hint { font-size: 12px; color: var(--fg4); margin-bottom: 4px; }
+.error { font-size: 12px; color: var(--red-b); }
+.featureRow { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--bg1); }
+.featureRow:last-child { border-bottom: none; }
+.featureInfo { display: flex; flex-direction: column; gap: 2px; }
+.featureLabel { font-size: 13px; color: var(--fg2); font-weight: 500; }
+.featureDesc { font-size: 11px; color: var(--fg4); }
+.toggle { width: 36px; height: 20px; border-radius: 10px; background: var(--bg2); border: none; cursor: pointer; position: relative; transition: background 0.2s; flex-shrink: 0; }
+.toggleOn { background: var(--green); }
+.toggleKnob { position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 50%; background: var(--fg); transition: left 0.2s; }
+.toggleOn .toggleKnob { left: 19px; }

@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0phanGV.js";import{t}from"./vendor-react-router-BcBjjPm1.js";var n=e((()=>{t()}));export{n as t};

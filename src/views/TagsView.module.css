@@ -1,0 +1,22 @@
+.page { flex: 1; overflow-y: auto; padding: 20px 24px; display: flex; flex-direction: column; gap: 16px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.title { font-size: 18px; font-weight: 600; color: var(--fg); }
+.addBtn { background: var(--blue); color: var(--fg); border: none; border-radius: 5px; padding: 6px 12px; font-size: 12px; cursor: pointer; }
+.addBtn:hover { background: var(--blue-b); }
+.createCard { background: var(--bg-soft); border: 1px solid var(--bg1); border-radius: 8px; padding: 14px; display: flex; flex-direction: column; gap: 10px; max-width: 340px; }
+.input { background: var(--bg1); border: 1px solid var(--bg2); color: var(--fg); padding: 7px 10px; border-radius: 4px; font-size: 13px; }
+.input:focus { outline: none; border-color: var(--blue-b); }
+.palette { display: flex; gap: 8px; }
+.swatch { width: 26px; height: 26px; border-radius: 50%; border: 2px solid transparent; cursor: pointer; transition: transform 0.1s; }
+.swatchActive { border-color: var(--fg); transform: scale(1.15); }
+.createActions { display: flex; gap: 6px; }
+.saveBtn { background: var(--green); color: var(--fg); border: none; border-radius: 4px; padding: 5px 14px; font-size: 12px; cursor: pointer; }
+.saveBtn:hover { background: var(--green-b); }
+.cancelBtn { background: none; border: 1px solid var(--bg2); color: var(--fg4); border-radius: 4px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
+.empty { font-size: 13px; color: var(--fg4); padding: 40px; text-align: center; }
+.tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.tag { display: flex; align-items: center; gap: 7px; padding: 6px 12px; border-radius: 20px; border: 1px solid color-mix(in srgb, var(--c) 40%, transparent); background: color-mix(in srgb, var(--c) 12%, transparent); }
+.tagDot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.tagName { font-size: 13px; font-weight: 500; color: var(--fg2); }
+.tagDelete { background: none; border: none; color: var(--fg4); cursor: pointer; font-size: 16px; line-height: 1; }
+.tagDelete:hover { color: var(--red-b); }

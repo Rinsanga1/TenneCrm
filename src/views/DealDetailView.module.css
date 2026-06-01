@@ -1,0 +1,72 @@
+.page { display: flex; flex-direction: column; height: 100%; overflow: hidden; }
+.topbar { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; border-bottom: 1px solid var(--bg1); flex-shrink: 0; }
+.backBtn { background: none; border: none; color: var(--fg4); font-size: 12px; cursor: pointer; padding: 4px 8px; border-radius: 4px; }
+.backBtn:hover { background: var(--bg1); color: var(--fg2); }
+.topActions { display: flex; gap: 8px; }
+.editBtn { background: var(--bg2); border: none; color: var(--fg2); border-radius: 4px; padding: 4px 12px; font-size: 12px; cursor: pointer; }
+.editBtn:hover { background: var(--bg3); }
+.saveBtn { background: var(--green); color: var(--fg); border: none; border-radius: 4px; padding: 4px 12px; font-size: 12px; cursor: pointer; }
+.saveBtn:hover { background: var(--green-b); }
+.cancelBtn { background: none; border: 1px solid var(--bg2); color: var(--fg4); border-radius: 4px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+.deleteBtn { background: none; border: 1px solid var(--bg2); color: var(--red-b); border-radius: 4px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+.deleteBtn:hover { background: var(--bg1); }
+
+.body { display: grid; grid-template-columns: 280px 1fr; flex: 1; overflow: hidden; }
+
+.panel { padding: 20px; border-right: 1px solid var(--bg1); overflow-y: auto; display: flex; flex-direction: column; gap: 16px; }
+.dealHeader { display: flex; align-items: flex-start; gap: 12px; }
+.dealIcon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; color: var(--fg2); }
+.dealTitle { font-size: 16px; font-weight: 600; color: var(--fg); margin-bottom: 4px; }
+.titleInput { font-size: 16px; font-weight: 600; background: var(--bg1); border: 1px solid var(--blue-b); border-radius: 4px; padding: 2px 6px; color: var(--fg); outline: none; width: 100%; margin-bottom: 4px; }
+.statusBadge { font-size: 11px; padding: 2px 8px; border-radius: 10px; text-transform: capitalize; }
+
+.details { display: flex; flex-direction: column; gap: 10px; }
+.detailRow { display: flex; align-items: baseline; gap: 10px; }
+.detailLabel { font-size: 11px; color: var(--fg4); width: 60px; flex-shrink: 0; }
+.detailVal { font-size: 13px; color: var(--fg2); }
+.linkBtn { background: none; border: none; color: var(--blue-b); font-size: 13px; cursor: pointer; padding: 0; text-align: left; }
+.linkBtn:hover { text-decoration: underline; }
+.notesBlock { padding-top: 8px; border-top: 1px solid var(--bg1); }
+.notesText { font-size: 13px; color: var(--fg3); line-height: 1.6; white-space: pre-wrap; }
+.statusActions { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 12px; border-top: 1px solid var(--bg1); }
+.wonBtn { font-size: 12px; padding: 4px 10px; border-radius: 4px; border: 1px solid var(--green-b); color: var(--green-b); background: none; cursor: pointer; }
+.wonBtn:hover { background: color-mix(in srgb, var(--green-b) 12%, transparent); }
+.lostBtn { font-size: 12px; padding: 4px 10px; border-radius: 4px; border: 1px solid var(--red-b); color: var(--red-b); background: none; cursor: pointer; }
+.lostBtn:hover { background: color-mix(in srgb, var(--red-b) 12%, transparent); }
+.reopenBtn { font-size: 12px; padding: 4px 10px; border-radius: 4px; border: 1px solid var(--fg4); color: var(--fg4); background: none; cursor: pointer; }
+.reopenBtn:hover { background: var(--bg1); }
+
+.editForm { display: flex; flex-direction: column; gap: 10px; }
+.editRow { display: flex; align-items: center; gap: 10px; }
+.editLabel { font-size: 11px; color: var(--fg4); width: 60px; flex-shrink: 0; }
+.editInput { background: var(--bg1); border: 1px solid var(--bg2); color: var(--fg); padding: 5px 8px; border-radius: 4px; font-size: 13px; flex: 1; }
+.editInput:focus { outline: none; border-color: var(--blue-b); }
+.editSelect { background: var(--bg1); border: 1px solid var(--bg2); color: var(--fg); padding: 5px 8px; border-radius: 4px; font-size: 13px; flex: 1; }
+.editTextarea { background: var(--bg1); border: 1px solid var(--bg2); color: var(--fg); padding: 6px 8px; border-radius: 4px; font-size: 13px; flex: 1; resize: vertical; font-family: inherit; }
+.editTextarea:focus { outline: none; border-color: var(--blue-b); }
+
+.main { display: flex; flex-direction: column; overflow-y: auto; }
+.section { padding: 16px 20px; border-bottom: 1px solid var(--bg1); }
+.sectionHead { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.sectionHeadRight { display: flex; align-items: center; gap: 8px; }
+.sectionTitle { font-size: 11px; font-weight: 600; color: var(--fg4); text-transform: uppercase; letter-spacing: 0.5px; }
+.addSmBtn { background: none; border: 1px solid var(--bg2); color: var(--fg4); border-radius: 4px; padding: 2px 8px; font-size: 11px; cursor: pointer; }
+.addSmBtn:hover { background: var(--bg1); color: var(--fg2); }
+.empty { font-size: 12px; color: var(--fg4); }
+.compose { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+.composeInput { background: var(--bg1); border: 1px solid var(--blue-b); color: var(--fg); padding: 6px 8px; border-radius: 4px; font-size: 13px; }
+.composeInput:focus { outline: none; }
+.composeTextarea { background: var(--bg1); border: 1px solid var(--blue-b); color: var(--fg); padding: 6px 8px; border-radius: 4px; font-size: 13px; resize: none; font-family: inherit; line-height: 1.5; }
+.composeActions { display: flex; gap: 6px; }
+.noteTypeBadge { font-size: 11px; color: var(--fg4); }
+.noteTypeSelect { background: var(--bg1); border: 1px solid var(--bg2); color: var(--fg3); font-size: 11px; padding: 2px 6px; border-radius: 4px; }
+.taskRow { display: flex; align-items: center; gap: 8px; padding: 6px 4px; border-bottom: 1px solid var(--bg-soft); cursor: pointer; border-radius: 3px; }
+.taskRow:hover { background: var(--bg1); }
+.taskCheck { color: var(--fg4); font-size: 12px; flex-shrink: 0; }
+.taskTitle { flex: 1; font-size: 13px; color: var(--fg2); }
+.taskDone { flex: 1; font-size: 13px; color: var(--fg4); text-decoration: line-through; }
+.taskDue { font-size: 11px; color: var(--fg4); }
+.noteCard { padding: 10px 0; border-bottom: 1px solid var(--bg-soft); }
+.noteBody { font-size: 13px; color: var(--fg2); line-height: 1.6; white-space: pre-wrap; }
+.noteMeta { font-size: 11px; color: var(--fg4); margin-top: 3px; }
+.notFound { padding: 40px; color: var(--fg4); }
